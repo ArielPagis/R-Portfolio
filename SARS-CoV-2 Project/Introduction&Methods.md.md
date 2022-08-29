@@ -21,3 +21,17 @@ Next on, using published literature, I divided the 7 different inspected tissues
 Following that, I conducted a t-test between the two groups, and checked if there is a significant difference between the score of each group.
 Next, I performed a PCA essay on the different tissues, to see if the two different groups cluster separately.
 Lastly, I compared the 147 genes found to additional two similar SARS-COV-2 genetic screen papers using hypergeometric distribution test.
+
+
+**Methods:**
+In the following project I analyzed the gene expression of 7 different cell types derived from all 3 germ layers: Mesoderm- Macrophages and Cardiomyocytes, Endoderm- Pancreas, Liver and Lung, Ectoderm- Cortical neurons. In addition, human embryonic stem cells (hesc) were tested.
+My raw data, RNA sequence for each of the tissues, was downloaded from the GEO database. 
+For each sample, an alignment to the human genome was done with STAR algorithm using the cluster system of the Hebrew university. 
+The resulted gene AA  normalized using TPM.
+Then, the expression of each of the 147 genes found in Schneider et al paper were tested for each of the cell types described above, setting the threshold of expression to be of TPM 1.
+A score that represent the expressed genes was attributed to each tissue, ranging from 0 (none of the 147 found genes were expressed) to 147 (all of the found genes are expressed).
+Next on, using published literature, I divided the 7 different inspected tissues to two groups according to their infectability by SARS-CoV-2 -known to be infected and not known to be infected (according to literature hesc will be attributed to the non-infected group (Yang et al, 2020).
+Following that, I conducted a t-test between the two groups, and checked if there is a significant difference between the score of each group.
+Next, I performed a PCA essay on the different tissues, to see if the two different groups cluster separately.
+Lastly, I compared the 147 genes found to additional two similar SARS-COV-2 genetic screen papers using hypergeometric distribution test.
+
